@@ -1,0 +1,33 @@
+.promotions
+    &__content
+        display: flex
+    &__item
+        position: relative
+        display: flex
+        width: 33.333%
+        text-align: center
+        display: flex
+        align-items: center
+        justify-content: center
+        &::before
+            content: ""
+            position: absolute
+            z-index: 10
+            right: 0
+            top: 0
+            height: 634px
+            width: 100%
+            background-color: rgba(0, 0, 0, 0.3)
+    &__text
+        position: absolute
+        z-index: 100
+        color: #fff
+        &--title
+            display: block
+            font-size: 25px
+            font-weight: 700
+            line-height: 30px
+            margin-bottom: 15px
+        &-subtitle
+            font-size: 18px
+            line-height: 23px
