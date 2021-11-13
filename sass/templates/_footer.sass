@@ -1,0 +1,45 @@
+.footer
+    background-color: #F7F7F7
+    &__top
+        display: flex
+        justify-content: space-between
+        padding: 50px 0
+    &__list
+        &--title
+            font-size: 20px
+            font-weight: 600
+            line-height: 30px
+            margin-bottom: 10px
+        &--item
+            font-size: 13px
+            line-height: 21px
+    &__about
+        width: 380px
+        &--title
+            font-size: 20px
+            font-weight: 600
+            line-height: 30px
+            margin-bottom: 10px
+        &--item
+            font-size: 13px
+            line-height: 21px
+            &:first-child
+                margin-bottom: 19px
+    &_bg
+        background-color: #fff
+    &__bottom
+        display: flex
+        justify-content: space-between
+        align-items: center
+        padding: 20px 0
+        &--text
+            font-size: 13px
+            line-height: 18px
+    &-color
+        color: $primary
+        &--payments
+            width: 340px
+            height: 23px
+    &-point
+        &::before
+           content: "." 
