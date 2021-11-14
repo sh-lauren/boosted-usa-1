@@ -30,6 +30,9 @@
     font-size: 14px
     font-weight: 400
     line-height: 23px
+    transition: background-color .2s ease-in-out
+    &:hover
+        background-color: #606060
     &-tiny
         padding: 5px 16px
     &-medium
@@ -37,3 +40,10 @@
         margin-right: 12px
     &-large
         padding: 5px 66px
+.item
+    &--scale
+        height: 100%
+        overflow: hidden
+        transition: transform .3s linear
+        &:hover
+            transform: scale(1.1)
