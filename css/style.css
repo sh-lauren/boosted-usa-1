@@ -399,6 +399,11 @@ h1, h2, h3, h4, h5, h6, span, p {
 }
 
 .header__bottom {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
