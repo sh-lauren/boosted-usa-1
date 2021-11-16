@@ -589,9 +589,40 @@ h1, h2, h3, h4, h5, h6, span, p {
 }
 
 .choise__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   overflow: hidden;
   position: relative;
   max-height: 580px;
+  max-width: 580px;
+  text-align: center;
+}
+
+.choise__item--text {
+  position: absolute;
+  z-index: 100;
+  color: #fff;
+}
+
+.choise__item--title {
+  display: block;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 30px;
+  margin-top: 10px;
+  margin-bottom: 14px;
+}
+
+.choise__item--subtitle {
+  font-size: 18px;
+  line-height: 23px;
 }
 
 .choise__item:hover .item--scale {
@@ -608,31 +639,6 @@ h1, h2, h3, h4, h5, h6, span, p {
   height: 100%;
   z-index: 10;
   background-color: rgba(147, 147, 147, 0.3);
-}
-
-.choise__item--lightning {
-  position: absolute;
-  top: 220px;
-  left: 265px;
-}
-
-.choise__item--title {
-  font-size: 25px;
-  font-weight: 700;
-  line-height: 30px;
-  color: #fff;
-  position: absolute;
-  top: 280px;
-  left: 170px;
-}
-
-.choise__item--subtitle {
-  font-size: 18px;
-  line-height: 23px;
-  color: #fff;
-  position: absolute;
-  bottom: 240px;
-  left: 250px;
 }
 
 .performance {

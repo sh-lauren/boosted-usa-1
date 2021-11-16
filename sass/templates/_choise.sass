@@ -24,9 +24,28 @@
         display: flex
         justify-content: space-around
     &__item
+        display: flex
+        align-items: center
+        justify-content: center
         overflow: hidden
         position: relative
         max-height: 580px
+        max-width: 580px
+        text-align: center
+        &--text
+            position: absolute
+            z-index: 100
+            color: #fff
+        &--title
+            display: block
+            font-size: 25px
+            font-weight: 700
+            line-height: 30px
+            margin-top: 10px
+            margin-bottom: 14px
+        &--subtitle
+            font-size: 18px
+            line-height: 23px
         &:hover .item--scale
             transform: scale(1.1)
         &::before
@@ -38,23 +57,5 @@
             height: 100%
             z-index: 10
             background-color: rgba(147, 147, 147, 0.3)
-        &--lightning
-            position: absolute
-            top: 220px
-            left: 265px
-        &--title
-            font-size: 25px
-            font-weight: 700
-            line-height: 30px
-            color: #fff
-            position: absolute
-            top: 280px
-            left: 170px
-        &--subtitle
-            font-size: 18px
-            line-height: 23px
-            color: #fff
-            position: absolute
-            bottom: 240px
-            left: 250px
+
         
