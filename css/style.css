@@ -499,6 +499,24 @@ h1, h2, h3, h4, h5, h6, span, p {
   padding: 5px 66px;
 }
 
+.logo {
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.logo:hover {
+  opacity: 0.7;
+}
+
+.footer-logo {
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.footer-logo:hover {
+  opacity: 0.7;
+}
+
 .item--scale {
   height: 100%;
   overflow: hidden;
@@ -506,11 +524,6 @@ h1, h2, h3, h4, h5, h6, span, p {
   transition: -webkit-transform .3s linear;
   transition: transform .3s linear;
   transition: transform .3s linear, -webkit-transform .3s linear;
-}
-
-.item--scale:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
 }
 
 .link--hover {
@@ -526,8 +539,8 @@ h1, h2, h3, h4, h5, h6, span, p {
 .svg-size-color {
   -webkit-transition: fill 0.3s ease;
   transition: fill 0.3s ease;
-  width: 18px;
-  height: 18px;
+  width: 20px;
+  height: 20px;
 }
 
 .gallery {
@@ -579,6 +592,11 @@ h1, h2, h3, h4, h5, h6, span, p {
   overflow: hidden;
   position: relative;
   max-height: 580px;
+}
+
+.choise__item:hover .item--scale {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .choise__item::before {
@@ -707,6 +725,12 @@ h1, h2, h3, h4, h5, h6, span, p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  overflow: hidden;
+}
+
+.promotions__item:hover .item--scale {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .promotions__item::before {
